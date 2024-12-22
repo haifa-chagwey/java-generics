@@ -1,4 +1,4 @@
-package com.haifachagwey;
+package com.haifachagwey.genericswithclasses;
 
 // public class Box<T, K> {
 // public class Box<T extends Comparable<T>> {

@@ -1,4 +1,4 @@
-package com.haifachagwey;
+package com.haifachagwey.genericswithclasses;
 
 public class Phone {
 

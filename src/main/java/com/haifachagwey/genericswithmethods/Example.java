@@ -1,6 +1,6 @@
-package com.haifachagwey;
+package com.haifachagwey.genericswithmethods;
 
-public class GenericsWithMethods {
+public class Example {
 
     public static void main(String[] args) {
 //        String[] names = {"Ali", "Jamila"};
@@ -11,7 +11,7 @@ public class GenericsWithMethods {
 //                  -----------
         String[] names = {"Ali", "Jamila"};
         Character[] letters = {'A', 'B', 'C'};
-        Integer[] numbers = {1, 2, 3, 4, 5};
+        Integer[] numbers = {1, 2, 3};
         print(names);
         print(letters);
         print(numbers);
@@ -22,11 +22,16 @@ public class GenericsWithMethods {
 //        }
 //    }
 //                  -----------
-    String[] names = {"Ali", "Jamila"};
-    static <T> void print(T[] array) {
-//        Works with any datatype
-        for (T e : array) {
+    static void print(Object[] array) {
+        for (Object e : array) {
             System.out.println(e.getClass().getName() + " - " + e);
         }
     }
+//                  -----------
+//    static <T> void print(T[] array) {
+////        Works with any datatype
+//        for (T e : array) {
+//            System.out.println(e.getClass().getName() + " - " + e);
+//        }
+//    }
 }
