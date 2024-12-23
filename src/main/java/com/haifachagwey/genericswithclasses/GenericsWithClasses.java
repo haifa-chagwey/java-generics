@@ -1,18 +1,25 @@
 package com.haifachagwey.genericswithclasses;
 
+import java.util.Date;
+
 public class GenericsWithClasses {
 
     public static void main(String[] args) {
 
-        Box<Phone> box = new Box<>();
-//        Box of phone
-        box.set(new Phone("Samsung"));
-        System.out.println(box.get());
+        Box box = new Box();
+        box.set("1");
+        box.set(new Date());
 
-//        Box of letter
-        Box<Letter> box2 = new Box<>();
-        box2.set(new Letter("Eric"));
+//        Enforce the type that goes inside this box
+        Box<Phone> box2 = new Box<>();
+//      A box of phone
+        box2.set(new Phone("Samsung"));
         System.out.println(box2.get());
+
+//      A box of letter
+        Box<Letter> box3 = new Box<>();
+        box3.set(new Letter("Eric"));
+        System.out.println(box3.get());
     }
 
 }

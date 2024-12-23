@@ -1,32 +1,25 @@
 package com.haifachagwey.genericswithmethods;
 
-// Custom class
-class Person {
-    String name;
-
-    Person(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return name;
-    }
-}
+import com.haifachagwey.genericswithclasses.Box;
+import com.haifachagwey.genericswithclasses.Letter;
+import com.haifachagwey.genericswithclasses.Phone;
 
 public class ExampleTwo {
 
     public static void main(String[] args) {
-        // Custom class array
-        Person[] people = {new Person("Ali"), new Person("Jamila")};
+        Box<Phone> box2 = new Box<>();
+//      A box of phone
+        box2.set(new Phone("Samsung"));
+        print(box2);
 
-        // Printing arrays of different types
-        print(people);
+//      A box of letter
+        Box<Letter> box3 = new Box<>();
+        box3.set(new Letter("Eric"));
+        print(box3);
     }
 
-    static <T> void print(T[] array) {
-        for (T e : array) {
-            System.out.println(e.getClass().getName() + " - " + e);
-        }
+//    The print function works with any type of box
+    static <T> void print(Box<T> box) {
+        System.out.println(box.get());
     }
 }

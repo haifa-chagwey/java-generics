@@ -10,12 +10,14 @@ public class GenericType {
 
     public static void main(String[] args) {
 //        List<E>
+//        E -> type
 //        List<String> names = new ArrayList<String>();
 //        We can write it:
-        // List of strings
+//        List of strings
         List<String> names = new ArrayList<>();
         names.add("1");
-        // List of integers
+
+//        List of integers
         List<Integer> numbers = new ArrayList<>();
         numbers.add(1);
 //        E: is a type parameter
