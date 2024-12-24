@@ -16,3 +16,10 @@ public class ExampleTwo {
         System.out.println(number.compareTo(10));
     }
 }
+
+/*
+    Generics provide compile type checking
+    => Reduce the ClassCastException and the explicit cast of objects
+
+*/
+

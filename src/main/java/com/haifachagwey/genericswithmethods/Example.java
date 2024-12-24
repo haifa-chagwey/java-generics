@@ -9,17 +9,17 @@ public class Example {
 //        char[] letters = {'A', 'B', 'C'};
 //        print(names);
 //        print(letters);
-//        => The print function should work with any type of arrays
 //                  -----------
 
         String[] names = {"Ali", "Jamila"};
 //      When using generics, we have to use the of object version (or wrapper class) of primitive types (Integer(int), Character (char), Double (double))
         Character[] letters = {'A', 'B', 'C'};
+        Integer[] numbers = {1, 2, 3};
 //        int[] numbers = {1, 2, 3};
         Person[] people = { new Person("Ali"), new Person("Jamila") };
         print(names);
         print(letters);
-//        print(numbers);
+        print(numbers);
         print(people);
     }
 //    static void print(String[] array) {
@@ -27,6 +27,7 @@ public class Example {
 //            System.out.println(e.getClass().getName() + " - " + e);
 //        }
 //    }
+//        => The print function should work with any type of arrays
 //                  ----------
 
 //    ***** Using Object class *****
@@ -36,7 +37,6 @@ public class Example {
 //            System.out.println(e.getClass().getName() + " - " + e);
 //        }
 //    }
-//    => You lose the compile-time type checking that generics provide.
 
 //    ***** Using Generics: *****
     static <T> void print(T[] array) {
