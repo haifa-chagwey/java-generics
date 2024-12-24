@@ -20,12 +20,11 @@ public class Example {
 
 //      ****** Using Generics ******
 //        List of integers
-        List<Integer> numbers = new ArrayList();
+        List<Integer> numbers = new ArrayList<>();
         numbers.add(1);
         numbers.add(2);
         for (Integer number : numbers) {
             System.out.println(number);
         }
-
     }
 }

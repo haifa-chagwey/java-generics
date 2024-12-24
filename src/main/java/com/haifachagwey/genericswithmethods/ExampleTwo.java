@@ -18,7 +18,7 @@ public class ExampleTwo {
         print(box3);
     }
 
-//    The print function works with any type of box
+//      The print function works with any type of box
     static <T> void print(Box<T> box) {
         System.out.println(box.get());
     }
